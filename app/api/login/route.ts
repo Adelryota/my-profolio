@@ -28,18 +28,15 @@ export async function POST(request: NextRequest) {
     }
 
     if (!ADMIN_EMAIL || !ADMIN_PASSWORD_HASH) {
-      console.error("Login Error: Missing environment variables");
       return NextResponse.json({ error: "Server misconfigured" }, { status: 500 });
     }
 
     if (email !== ADMIN_EMAIL) {
-      console.warn("Login Failure: Email mismatch");
       return NextResponse.json({ error: "Invalid credentials" }, { status: 401 });
     }
 
     const valid = await bcrypt.compare(password, ADMIN_PASSWORD_HASH);
     if (!valid) {
-      console.warn("Login Failure: Password mismatch (bcrypt failed)");
       return NextResponse.json({ error: "Invalid credentials" }, { status: 401 });
     }
 
