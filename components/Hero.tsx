@@ -142,7 +142,7 @@ export default function Hero() {
               backgroundClip: "text",
             }}
           >
-            Bob
+            Adil Hamad
           </span>
         </motion.h1>
 
