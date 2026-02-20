@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Modern Developer Portfolio
 
-## Getting Started
+A high-performance, responsive portfolio website built with **Next.js 15**, **React 19**, and **Three.js**. This project showcases creative web development skills through interactive 3D elements and a sleek, modern UI.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Interactive 3D Visuals**: Powered by `@react-three/fiber` and `@react-three/drei` for immersive user experiences.
+- **Modern Tech Stack**: Built with Next.js App Router for optimal performance and SEO.
+- **Sleek UI/UX**: Styled with Tailwind CSS and Framer Motion for smooth, high-quality animations.
+- **Admin Dashboard**: Secure management system with JWT authentication and MongoDB integration.
+- **Responsive Design**: Fully optimized for all screen sizes and devices.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Built With
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [Three.js](https://threejs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [MongoDB](https://www.mongodb.com/)
+- [Framer Motion](https://www.framer.com/motion/)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🏁 Getting Started
 
-## Learn More
+### Prerequisites
 
-To learn more about Next.js, take a look at the following resources:
+- Node.js 20+
+- MongoDB instance
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/your-username/your-repo-name.git
+    ```
+2.  Install dependencies:
+    ```bash
+    npm install
+    ```
+3.  Set up environment variables in `.env.local`:
+    ```env
+    MONGODB_URI=your_mongodb_uri
+    JWT_SECRET=your_secret_key
+    ADMIN_PASSWORD=your_hashed_password
+    ```
+4.  Run the development server:
+    ```bash
+    npm run dev
+    ```
 
-## Deploy on Vercel
+## 📄 License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Distributed under the MIT License.

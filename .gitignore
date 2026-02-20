@@ -39,3 +39,16 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# AI and local artifacts
+.gemini/
+.antigravity/
+.agent/
+*.log
+rs.txt
+txt_result.txt
+proxy.ts
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
