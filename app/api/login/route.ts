@@ -10,16 +10,6 @@ export async function POST(request: NextRequest) {
 
     const { email, password } = await request.json();
 
-    // Log diagnostic info (safely)
-    console.log("Login Attempt:", {
-      providedEmail: email,
-      isEmailMatch: email === ADMIN_EMAIL,
-      envEmailLength: ADMIN_EMAIL?.length || 0,
-      envHashLength: ADMIN_PASSWORD_HASH?.length || 0,
-      hasEnvEmail: !!ADMIN_EMAIL,
-      hasEnvHash: !!ADMIN_PASSWORD_HASH,
-    });
-
     if (!email || !password) {
       return NextResponse.json(
         { error: "Email and password are required" },

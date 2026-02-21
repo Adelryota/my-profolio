@@ -83,7 +83,7 @@ export default function AdminLoginPage() {
               marginBottom: "1.5rem",
             }}
           >
-            &lt;for me to upload projects&gt;
+            for me to upload projects
           </a>
           <h1
             style={{
