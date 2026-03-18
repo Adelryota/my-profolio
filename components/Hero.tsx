@@ -27,9 +27,9 @@ const ThreeAvatar = dynamic(() => import("./ThreeAvatar"), {
 
 const TYPING_ROLES = [
   "Full Stack Developer",
-  "React & Next.js Engineer",
-  "TypeScript Enthusiast",
-  "UI/UX Craftsman",
+  "To Be Cloud Engineer",
+  "Adaptable Learner",
+  "AI Enthusiast",
 ];
 
 function TypingText() {

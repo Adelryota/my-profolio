@@ -33,30 +33,7 @@ const SKILLS = [
   { name: "GraphQL", icon: "◈" },
 ];
 
-/* ── Demo Apps ──────────────────────────────────── */
-const DEMOS = [
-  {
-    title: "Todo App",
-    desc: "Task manager with animations",
-    icon: "✅",
-    href: "/todo",
-    color: "#63b3ed",
-  },
-  {
-    title: "Weather App",
-    desc: "Real-time weather by city",
-    icon: "⛅",
-    href: "/weather",
-    color: "#7c6ff7",
-  },
-  {
-    title: "Shop",
-    desc: "E-commerce product browser",
-    icon: "🛍️",
-    href: "/shop",
-    color: "#f6ad55",
-  },
-];
+
 
 /* ── Contact Links ──────────────────────────────── */
 const CONTACTS = [
@@ -231,15 +208,16 @@ export default function Home() {
                 >
                   Who I Am
                 </h3>
-                <p style={{ color: "var(--text-secondary)", lineHeight: 1.9, marginBottom: "1rem" }}>
-                  I&apos;m a full-stack developer with a passion for crafting modern, performant web
-                  applications. I specialize in React, Next.js, and Node.js ecosystems — building
-                  products that are both beautiful and scalable.
-                </p>
-                <p style={{ color: "var(--text-secondary)", lineHeight: 1.9 }}>
-                  When I&apos;m not coding, I&apos;m exploring new technologies, contributing to open source,
-                  or learning about system design and architecture.
-                </p>
+               <p style={{ color: "var(--text-secondary)", lineHeight: 1.9, marginBottom: "1rem" }}>
+                I&apos;m a web developer specialized in HTML, CSS, JavaScript, and Python,
+                building modern, responsive, and user-focused applications using technologies
+                like React and other contemporary frameworks.
+              </p>
+              <p style={{ color: "var(--text-secondary)", lineHeight: 1.9 }}>
+                I&apos;m passionate about writing clean, maintainable code and have a strong
+                interest in Artificial Intelligence, enjoying the process of building and
+                experimenting with AI & API-powered solutions.
+              </p>
               </div>
             </AnimatedSection>
 
@@ -334,84 +312,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── 4. Demo Apps ── */}
-      <section
-        style={{
-          padding: "6rem 1.5rem",
-          background: "var(--bg-secondary)",
-        }}
-      >
-        <div style={{ maxWidth: 1200, margin: "0 auto", width: "100%" }}>
-          <AnimatedSection>
-            <SectionHeading
-              label="Demos"
-              title="Interactive Apps"
-              subtitle="Live mini-applications built to demonstrate real-world frontend skills."
-            />
-          </AnimatedSection>
 
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(3, 1fr)",
-              gap: "1.5rem",
-            }}
-            className="demo-grid"
-          >
-            {DEMOS.map((demo, i) => (
-              <AnimatedSection key={demo.title} delay={0.1 * i}>
-                <a
-                  href={demo.href}
-                  className="glass-card"
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    textAlign: "center",
-                    padding: "2.5rem 1.5rem",
-                    gap: "1rem",
-                    textDecoration: "none",
-                    transition: "transform 0.25s ease",
-                  }}
-                >
-                  <span style={{ fontSize: "2.5rem" }}>{demo.icon}</span>
-                  <h3
-                    style={{
-                      fontSize: "1.1rem",
-                      fontWeight: 700,
-                      color: demo.color,
-                    }}
-                  >
-                    {demo.title}
-                  </h3>
-                  <p style={{ fontSize: "0.85rem", color: "var(--text-secondary)" }}>
-                    {demo.desc}
-                  </p>
-                  <span
-                    style={{
-                      fontSize: "0.8rem",
-                      color: "var(--accent)",
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "0.3rem",
-                    }}
-                  >
-                    Open app →
-                  </span>
-                </a>
-              </AnimatedSection>
-            ))}
-          </div>
-        </div>
-
-        <style>{`
-          .demo-grid { @media (max-width: 768px) { grid-template-columns: 1fr !important; } }
-          @media (max-width: 768px) { .demo-grid { grid-template-columns: 1fr !important; } }
-        `}</style>
-      </section>
 
       {/* ── 5. Contact ── */}
-      <section id="contact" style={{ padding: "6rem 1.5rem" }}>
+      <section id="contact" style={{ padding: "6rem 1.5rem", background: "var(--bg-secondary)" }}>
         <div style={{ maxWidth: 700, margin: "0 auto", width: "100%" }}>
           <AnimatedSection>
             <SectionHeading
@@ -424,7 +328,7 @@ export default function Home() {
           <AnimatedSection delay={0.15}>
             <div
               className="glass-card"
-              style={{ padding: "2.5rem", display: "flex", flexDirection: "column", gap: "1.25rem" }}
+              style={{ padding: "2.5rem", display: "flex", flexDirection: "column", gap: "1.25rem", background: "var(--bg-primary)", borderColor: "var(--border)" }}
             >
               {CONTACTS.map((c) => (
                 <a
@@ -438,7 +342,7 @@ export default function Home() {
                     gap: "1rem",
                     padding: "1rem 1.25rem",
                     borderRadius: "8px",
-                    background: "rgba(255,255,255,0.02)",
+                    background: "var(--bg-secondary)",
                     border: "1px solid var(--border)",
                     color: "var(--text-secondary)",
                     transition: "border-color 0.2s, color 0.2s, background 0.2s",

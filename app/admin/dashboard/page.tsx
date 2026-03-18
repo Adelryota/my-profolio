@@ -228,7 +228,7 @@ export default function AdminDashboard() {
               backgroundClip: "text",
             }}
           >
-            &lt;Portfolio /&gt;
+            Portofolio
           </a>
           <span style={{ color: "var(--border)", fontSize: "1.2rem" }}>|</span>
           <span style={{ color: "var(--text-secondary)", fontSize: "0.9rem", fontWeight: 500 }}>Admin Dashboard</span>

@@ -221,7 +221,7 @@ export default function AdminLoginPage() {
                   Signing in…
                 </>
               ) : (
-                "Sign in →"
+                "Sign in"
               )}
             </motion.button>
           </form>
@@ -229,7 +229,7 @@ export default function AdminLoginPage() {
 
         {/* Back link */}
         <p style={{ textAlign: "center", marginTop: "1.5rem", color: "var(--text-muted)", fontSize: "0.85rem" }}>
-          <a href="/" style={{ color: "var(--accent)" }}>← Back to portfolio</a>
+          <a href="/" style={{ color: "var(--accent)" }}>Back to portfolio</a>
         </p>
       </motion.div>
 
